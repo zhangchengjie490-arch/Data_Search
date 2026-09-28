@@ -1,0 +1,117 @@
+{
+  "source": [
+    {
+      "id": "-1",
+      "name": "",
+      "desc": ""
+    },
+    {
+      "id": "CValues",
+      "name": "论文：CVALUES: Measuring the Values of Chinese Large Language Models from Safety to Responsibility",
+      "desc": "面向中文大模型价值观的评估与对齐研究测试集。 https://github.com/X-PLUG/CValues/blob/main/dataset/cvalues_responsibility_mc.jsonl",
+      "variants": [
+        "CValues"
+      ]
+    },
+    {
+      "id": "Jade",
+      "name": "论文：JADE: A Linguistics-based Safety Evaluation Platform for Large Language Models",
+      "desc": "复旦JADE-大模型测评与治理题集，涵盖文本对齐评估与文生图安全评估。 https://github.com/whitzard-ai/jade-db/tree/main",
+      "variants": [
+        "JADE(v3.0 hard)",
+        "JADE(v3.0 medium)",
+        "JADE(v2.0 t2i)"
+      ]
+    },
+    {
+      "id": "SafetyBench",
+      "name": "SafetyBench",
+      "desc": "大模型安全性评估基准，涵盖违法违规、偏见歧视、伦理道德等8个风险类别，支持中英文双语评测。 https://github.com/thu-coai/SafetyBench/tree/main/opensource_data",
+      "variants": [
+        "SafetyBench(test_en)",
+        "SafetyBench(test_zh)",
+        "SafetyBench(test_zh_subset)"
+      ]
+    },
+    {
+      "id": "TruthfulQA",
+      "name": "论文：TruthfulQA: Measuring How Models Mimic Human Falsehoods",
+      "desc": "衡量语言模型在回答问题时是否真实的基准，包含多选(MC)任务评估模型的事实准确性。 https://github.com/sylinrl/TruthfulQA/tree/main/data/v1",
+      "variants": [
+        "TruthfulQA"
+      ]
+    },
+    {
+      "id": "JailbreakBench",
+      "name": "JailbreakBench",
+      "desc": "越狱攻击行为数据集，包含有害行为指令和良性行为指令，用于评估大模型对越狱攻击的抵御能力。 https://huggingface.co/datasets/JailbreakBench/JBB-Behaviors/tree/main/data ｜ https://github.com/JailbreakBench/jailbreakbench/",
+      "variants": [
+        "JailbreakBench"
+      ]
+    },
+    {
+      "id": "HarmBench",
+      "name": "论文：HarmBench: A Standardized Evaluation Framework for Automated Red Teaming and Robust Refusal",
+      "desc": "有害行为标准化评估基准，包含标准/上下文/版权三类文本有害行为测试用例及多模态图文测试用例。 https://github.com/centerforaisafety/HarmBench/tree/main/data/behavior_datasets （来源文件：harmbench_behaviors_text_all.csv、harmbench_behaviors_multimodal_all.csv）",
+      "variants": [
+        "HarmBench",
+        "HarmBench(multimodal)"
+      ]
+    },
+    {
+      "id": "AdvBench",
+      "name": "论文：Why Should Adversarial Perturbations be Imperceptible? Rethink the Research Paradigm in Adversarial NLP",
+      "desc": "对抗攻击基准数据集，包含520条针对大模型的有害行为指令，用于评估模型的安全对齐程度。 https://github.com/thunlp/Advbench/ ｜ https://github.com/llm-attacks/llm-attacks/blob/main/data/advbench/harmful_behaviors.csv",
+      "variants": [
+        "AdvBench"
+      ]
+    },
+    {
+      "id": "DoNotAnswer",
+      "name": "论文：Do-Not-Answer: A Dataset for Evaluating Safeguards in LLMs",
+      "desc": "拒答评估数据集，包含模型应当拒绝回答的有害问题，涵盖信息危害、恶意使用、歧视偏见等5大风险领域。 https://github.com/Libr-AI/do-not-answer/tree/main/datasets/Instruction",
+      "variants": [
+        "DoNotAnswer"
+      ]
+    },
+    {
+      "id": "MoralChoice",
+      "name": "论文：Evaluating the Moral Beliefs Encoded in LLMs",
+      "desc": "道德选择评估数据集，通过道德困境场景测试模型在不同模糊度下的伦理判断能力。https://github.com/ninodimontalcino/moralchoice/tree/master/data/scenarios",
+      "variants": [
+        "MoralChoice(low)",
+        "MoralChoice(high)"
+      ]
+    },
+    {
+      "id": "S-Eval",
+      "name": "论文：S-Eval: Towards Automated and Comprehensive Safety Evaluation for Large Language Models",
+      "desc": "大模型安全评估数据集，包含10种攻击类型和8大风险类别，覆盖10万条中文攻击样本。https://github.com/IS2Lab/S-Eval/tree/main/s_eval/full/S-Eval_attack_zh_full.jsonl.zip",
+      "variants": [
+        "S-Eval"
+      ]
+    },
+    {
+      "id": "PAPER_MetaphorJailbreak",
+      "name": "论文：Metaphor-based Jailbreak Attacks on Text-to-Image Models",
+      "desc": "基于隐喻的越狱攻击（MJA）测试提示词集合。论文提出了针对文本生成图像（T2I）模型的隐喻式越狱攻击方法，通过LLM多智能体生成模块（LMAG）和对抗提示优化模块（APO）生成隐喻式对抗提示。该文件为论文中使用的测试提示词样本。注意：此文件虽存于metaphor-based仓库，但内容本身未包含隐喻手法，属于直白类型。地址：https://github.com/datar001/metaphor-based-jailbreaking-attack/blob/main/test_prompts.json | 论文：https://arxiv.org/abs/2512.10766 | GitHub：https://github.com/datar001/metaphor-based-jailbreaking-attack",
+      "variants": []
+    },
+    {
+      "id": "PAPER_T2IRiskyPrompt",
+      "name": "论文：T2I-RiskyPrompt: A Benchmark for Safety Evaluation, Attack, and Defense on Text-to-Image Model",
+      "desc": "面向文本生成图像（T2I）模型的安全评测基准。论文提出了一个层次化风险分类体系（6个一级类别、14个细分子类别），并构建了6,432个有效风险提示词，每个提示词均标注了层次化类别标签和详细风险原因。地址：https://raw.githubusercontent.com/datar001/T2I-RiskyPrompt/refs/heads/main/T2I-RiskyPrompt.json | 论文：https://arxiv.org/abs/2510.22300 | GitHub：https://github.com/datar001/T2I-RiskyPrompt",
+      "variants": []
+    },
+    {
+      "id": "ACZ-Jailbreak",
+      "name": "论文：Hard to Read, Easy to Jailbreak: How Visual Degradation Bypasses MLLM Safety Alignment (ACL 2026 Findings)",
+      "desc": "多模态大模型视觉退化越狱攻击基准（Attack Comfort Zone, ACZ）。发布仓库提供770条角色扮演越狱提示词，按原始来源拆分为 advbench(392)/harmbench(258)/behaviors(120) 三个子集（样本层 data_source 区分），每条附带 MLCommons 安全类别标签。文本形态可直接评估角色扮演型越狱抵御能力，亦可通过论文脚本渲染为不同 DPI 图片研究视觉退化攻击。https://github.com/Westlake-AGI-Lab/ACZ-Jailbreak/blob/main/data/processed/labeled_roleplay_jailbreak_results.csv",
+      "variants": [
+        "ACZ-Jailbreak(advbench)",
+        "ACZ-Jailbreak(harmbench)",
+        "ACZ-Jailbreak(behaviors)"
+      ]
+    }
+  ]
+}

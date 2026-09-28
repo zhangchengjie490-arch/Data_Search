@@ -1,0 +1,94 @@
+{
+  "version": "2026.09-v2",
+  "dimensions": {
+    "evaluation_layers": {
+      "model_behavior": ["behavior safety", "content safety", "harmful output", "refusal", "over-refusal", "moderation", "guardrail", "alignment"],
+      "attack_resistance": ["jailbreak", "red team", "adversarial", "attack", "prompt injection", "data poisoning", "secret extraction"],
+      "system_agent_security": ["agent", "tool use", "tool calling", "rag", "retrieval", "sandbox", "autonomous", "environment", "mcp"]
+    },
+    "risk_domains": {
+      "harmful_content": ["harmful", "unsafe", "violence", "illegal", "sexual", "self-harm", "self harm", "违法", "暴力", "色情", "自残"],
+      "toxicity_hate": ["toxicity", "toxic", "hate", "harassment", "abusive", "仇恨", "毒性", "骚扰"],
+      "bias_fairness": ["bias", "fairness", "stereotype", "demographic", "偏见", "公平", "刻板印象"],
+      "truthfulness": ["truthful", "truthfulness", "hallucination", "factuality", "misinformation", "幻觉", "真实性", "事实性"],
+      "privacy": ["privacy", "pii", "memorization", "data leakage", "secret", "隐私", "个人信息", "数据泄露"],
+      "cyber_dual_use": ["cyber", "malware", "phishing", "vulnerability", "exploit", "dual-use", "dual use", "网络安全", "恶意代码", "漏洞"],
+      "high_stakes": ["biosecurity", "chemical", "medical", "financial", "legal", "生物安全", "化学", "医疗", "金融"],
+      "deception_autonomy": ["deception", "manipulation", "power seeking", "autonomy", "sycophancy", "欺骗", "操纵", "自主性"]
+    },
+    "safety_categories": {
+      "content_safety_harmful_output": ["content safety", "harmful output", "violence", "illegal", "sexual", "self-harm", "内容安全", "有害输出", "暴力", "违法", "色情", "自残"],
+      "jailbreak_adversarial_attack": ["jailbreak", "red team", "adversarial attack", "role-play", "prompt rewrite", "越狱", "对抗攻击", "角色扮演", "提示改写"],
+      "refusal_overrefusal": ["refusal", "over-refusal", "over refusal", "exaggerated safety", "拒答", "过度拒答"],
+      "toxicity_hate_speech": ["toxicity", "toxic", "hate speech", "harassment", "abusive", "毒性", "仇恨言论", "骚扰", "侮辱"],
+      "bias_fairness": ["bias", "fairness", "stereotype", "gender", "race", "religion", "age", "disability", "偏见", "公平性", "刻板印象"],
+      "truthfulness_hallucination": ["truthfulness", "hallucination", "factuality", "misinformation", "真实性", "幻觉", "错误信息"],
+      "privacy_data_leakage": ["privacy", "pii", "memorization", "data leakage", "secret extraction", "隐私", "个人信息", "数据泄露", "秘密提取"],
+      "cyber_dual_use": ["cyber", "malware", "phishing", "vulnerability", "exploit", "dual-use", "网络安全", "恶意代码", "漏洞利用", "钓鱼"],
+      "prompt_injection_rag_security": ["prompt injection", "indirect prompt injection", "rag security", "retrieval", "提示注入", "间接提示注入", "RAG 安全"],
+      "agent_tool_security": ["agent safety", "tool use", "tool calling", "unauthorized action", "permission", "resource abuse", "Agent 安全", "工具调用", "越权", "权限边界"],
+      "multimodal_safety": ["multimodal safety", "visual jailbreak", "ocr bypass", "image safety", "audio safety", "video safety", "多模态安全", "视觉越狱", "OCR 绕过"],
+      "multilingual_cultural_safety": ["multilingual safety", "cross-lingual safety", "cultural safety", "多语言安全", "文化安全", "跨语言安全"],
+      "reliability_robustness": ["robustness", "ood", "out-of-distribution", "input perturbation", "encoding", "long context", "可靠性", "鲁棒性", "分布外", "输入扰动", "长上下文"]
+    },
+    "attack_vectors": {
+      "direct_jailbreak": ["jailbreak", "role-play", "roleplay", "越狱", "角色扮演"],
+      "prompt_injection": ["prompt injection", "instruction injection", "提示注入"],
+      "indirect_prompt_injection": ["indirect prompt injection", "untrusted data", "tool output injection", "间接提示注入"],
+      "adversarial_perturbation": ["adversarial perturbation", "obfuscation", "encoding", "typographic", "对抗扰动", "混淆", "编码攻击"],
+      "data_poisoning": ["data poisoning", "memory poisoning", "backdoor", "数据投毒", "记忆投毒", "后门"],
+      "secret_extraction": ["secret extraction", "system prompt extraction", "prompt leakage", "秘密提取", "系统提示泄露"]
+    },
+    "target_systems": {
+      "chat_model": ["llm", "language model", "chat model", "对话模型", "大语言模型"],
+      "safety_classifier": ["moderation", "guard model", "safety classifier", "content classifier", "审核模型", "安全分类器"],
+      "rag_system": ["rag", "retrieval augmented", "retrieval-augmented", "知识库", "检索增强"],
+      "tool_agent": ["agent", "tool use", "tool-use", "tool calling", "tool-calling", "智能体", "工具调用"],
+      "code_model": ["code model", "code generation", "coding llm", "代码模型", "代码生成"],
+      "multimodal_model": ["multimodal", "vision-language", "vlm", "text-to-image", "t2i", "多模态", "文生图"]
+    },
+    "evaluation_objectives": {
+      "harmful_compliance": ["harmful response", "harmful completion", "compliance", "有害回答", "有害输出"],
+      "correct_refusal": ["refusal", "refuse", "拒答", "拒绝回答"],
+      "over_refusal": ["over-refusal", "over refusal", "exaggerated safety", "过度拒答"],
+      "attack_success_rate": ["attack success rate", "asr", "jailbreak success", "攻击成功率"],
+      "classification_quality": ["classification", "precision", "recall", "f1", "分类", "准确率"],
+      "task_utility": ["task success", "utility", "helpfulness", "正常任务", "可用性"],
+      "unauthorized_action": ["unauthorized", "permission", "privilege", "unsafe action", "越权", "未授权", "危险操作"],
+      "information_leakage": ["leak", "exfiltration", "disclosure", "泄露", "外传"]
+    },
+    "modalities": {
+      "text": ["text", "prompt", "文本", "提示词"],
+      "image": ["image", "vision", "visual", "图片", "视觉", "图像"],
+      "audio": ["audio", "speech", "音频", "语音"],
+      "video": ["video", "视频"]
+    },
+    "languages": {
+      "zh": ["chinese", "中文", "zh-cn", "zh"],
+      "en": ["english", "英文", "en"],
+      "multilingual": ["multilingual", "cross-lingual", "多语言", "跨语言"]
+    }
+  },
+  "asset_type_keywords": {
+    "interactive_environment": ["dynamic environment", "interactive environment", "sandbox", "simulator", "仿真环境", "交互环境"],
+    "evaluation_suite": ["evaluation framework", "evaluation suite", "benchmark framework", "评测框架", "评测套件"],
+    "leaderboard": ["leaderboard", "排行榜"],
+    "attack_library": ["attack library", "jailbreak strings", "攻击库", "越狱提示"],
+    "train_eval_dataset": ["train split", "training dataset", "train and test", "训练集", "训练数据"],
+    "static_benchmark": ["benchmark", "test suite", "evaluation dataset", "评测基准", "测试集"]
+  },
+  "usage_role_keywords": {
+    "train": ["training dataset", "train split", "sft", "训练集", "训练数据"],
+    "validation": ["validation split", "dev split", "验证集"],
+    "evaluation": ["test split", "evaluation", "benchmark", "测试集", "评测"]
+  },
+  "ai_safety_positive": [
+    "ai safety", "llm safety", "model safety", "alignment", "jailbreak", "prompt injection", "red teaming", "harmful", "guardrail", "refusal", "toxicity", "truthfulness", "agent safety", "大模型安全", "模型安全", "越狱", "提示注入", "安全评测"
+  ],
+  "evaluation_positive": [
+    "benchmark", "evaluation", "test suite", "test set", "leaderboard", "metric", "baseline", "评测", "基准", "测试集", "排行榜", "指标"
+  ],
+  "scope_negative": [
+    "safety helmet", "construction safety", "traffic safety", "workplace safety", "fire safety detection", "安全帽", "施工安全", "交通安全", "消防检测"
+  ]
+}
